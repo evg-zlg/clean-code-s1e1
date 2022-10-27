@@ -5,22 +5,25 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body>
-    <div class="header">
+
+    <header class="header">
       <img class="header__img" src="./eisenhower-matrix.jpg" alt="Eisenhower Matrix">
       <a 
           class="header__link" 
           href="https://goal-life.com/page/method/matrix-eisenhower">
           Want more details?
       </a>
-    </div>
-    <div class="content">
-      <p class="content__add list" id="topSectionForAddingElementToList">
+    </header>
+    
+    <main class="content">
+
+      <section class="content__add list" id="topSectionForAddingElementToList">
         <label class="list__header" for="new-task">Add Item</label>
         <div class="list__task task"> 
           <input class="task__input js_task__input_new" id="new-task" type="text">
           <button class="task__btn btn js_task__btn_add">Add</button>
         </div>
-      </p>
+      </section>
       
       <section class="content__todo list">
         <h3 class="list__header">Todo</h3>
@@ -45,20 +48,23 @@
           </li>
         </ul>
       </section>
-      
-      <h3 class="list__header">Completed</h3>
-      <ul class="list__items js_list__items_completed" id="completed-tasks">
-        <li class="task">
-          <input class="task__checkbox" type="checkbox" checked>
-          <label class="task__label task__label_through">See the Doctor</label>
-          <input class="task__input" type="text" >
-          <button class="task__edit btn">Edit</button>
-          <button class="task__del btn">
-            <img class="btn__img" src="./remove.svg" alt="remove">
-          </button>
-        </li>
-      </ul>
-    </div>
+
+      <section class="content__todo list">
+        <h3 class="list__header">Completed</h3>
+        <ul class="list__items js_list__items_completed" id="completed-tasks">
+          <li class="task">
+            <input class="task__checkbox" type="checkbox" checked>
+            <label class="task__label task__label_through">See the Doctor</label>
+            <input class="task__input" type="text" >
+            <button class="task__edit btn">Edit</button>
+            <button class="task__del btn">
+              <img class="btn__img" src="./remove.svg" alt="remove">
+            </button>
+          </li>
+        </ul>
+      </section>
+
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
