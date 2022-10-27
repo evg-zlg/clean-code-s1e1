@@ -40,7 +40,7 @@ var createNewTaskElement=function(taskString){
     deleteButton.className="task__del btn";
     var deleteButtonImg=document.createElement("img");//delete button image
     deleteButtonImg.className = "btn__img";
-    deleteButtonImg.src = './remove.svg';
+    deleteButtonImg.src = "./remove.svg";
     deleteButtonImg.alt = "Eisenhower Matrix";
     deleteButton.appendChild(deleteButtonImg); //append image into delete button
     
@@ -76,7 +76,7 @@ var editTask=function(){
 
     var listItem=this.parentNode;
 
-    var editInput=listItem.querySelector('.task__input');
+    var editInput=listItem.querySelector(".task__input");
     var label=listItem.querySelector(".task__label");
     var editBtn=listItem.querySelector(".task__edit");
     var containsClass=listItem.classList.contains("task_edit-mode");
